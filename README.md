@@ -1,4 +1,4 @@
-# Évaluation JavaScript — Partie pratique (3h)
+# Évaluation JavaScript
 
 ## Objectif
 Résoudre **4 exercices** en JavaScript :
