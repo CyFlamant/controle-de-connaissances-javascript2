@@ -11,7 +11,17 @@ Rappel :
 */
 
 function findMedianSortedArrays(nums1, nums2) {
-  // TODO : écrire ton code ici
+  let mediane;
+  for (let i=0;i<nums2.length;i++) {
+    nums1.push(nums2[i]);    
+  }
+  if (nums1.length %2 == 0) {
+    mediane = (nums1[nums1.length/2-1]+nums1[nums1.length/2])/2;
+  }
+  else {
+    mediane = nums1[(nums1.length - nums1.length%2)/2];
+  }
+  return mediane
 }
 
 // --------------------

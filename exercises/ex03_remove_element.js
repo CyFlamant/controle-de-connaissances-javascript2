@@ -8,7 +8,17 @@ Les k premiers éléments de nums doivent être ceux conservés.
 */
 
 function removeElement(nums, val) {
-  // TODO : écrire ton code ici
+ // if (nums.length == 0) return 0;
+  let count = 0;
+  for (i=0;i<nums.length;i++) {
+    if (nums[i] == val) {
+      nums.splice(i,1);
+      i -= i;
+      count += 1;
+    }
+  }
+  return count;
+  
 }
 
 // --------------------
